@@ -1,0 +1,49 @@
+body {
+    font-family: 'Arial', sans-serif; /* This sets a custom font. You can change it to any web-safe font or Google Font. */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: darkred;
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 24px;
+    cursor: pointer;
+    border: 2px solid darkred;
+    color: darkgreen;
+}
+
+.cell:hover {
+    background-color: lightgreen;
+}
+
+#status {
+    margin-top: 20px;
+    color: darkred;
+    font-size: 18px;
+}
+
+footer {
+    margin-top: 40px;
+    color: #555;
+    font-size: 16px;
+}
